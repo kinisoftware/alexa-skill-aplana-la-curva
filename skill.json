@@ -1,0 +1,32 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "es-ES": {
+          "name": "skill-aplana-la-curva",
+          "summary": "Skill de la iniciativa 'Aplana la curva' para la lucha contra el Covid-19",
+          "description": "",
+          "examplePhrases": [
+            "Alexa abre aplana la curva",
+            "¿Qué es un coronavirus?",
+            "¿Cuáles son los síntomas?"
+          ],
+          "keywords": []
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Sample Testing Instructions.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda/custom",
+          "uri": "ask-custom-skill-aplana-la-curva-default"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

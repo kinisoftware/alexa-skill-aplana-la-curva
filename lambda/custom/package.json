@@ -1,0 +1,17 @@
+{
+  "name": "aplana-la-curva",
+  "version": "1.2.0",
+  "description": "Skill de la iniciativa 'Aplana la curva' para la lucha contra el Covid-19",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AplanaLaCurva",
+  "license": "Apache License",
+  "dependencies": {
+    "ask-sdk-core": "^2.7.0",
+    "ask-sdk-model": "^1.19.0",
+    "aws-sdk": "^2.326.0",
+    "i18next": "^15.0.5"
+  }
+}
