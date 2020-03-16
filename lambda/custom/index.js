@@ -8,6 +8,7 @@ const Alexa = require('ask-sdk-core');
 const i18n = require('i18next');
 // i18n strings for all supported locales
 const languageStrings = require('./languageStrings');
+const repromptText = '¿En que más te puedo ayudar?';
 
 const LaunchRequestHandler = {
     canHandle(handlerInput) {
@@ -33,6 +34,7 @@ const WhatIsCoronavirusIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .reprompt(repromptText)
             .getResponse();
     }
 };
@@ -47,6 +49,7 @@ const SymptomsIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .reprompt(repromptText)
             .getResponse();
     }
 };
@@ -61,6 +64,7 @@ const TravelingIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .reprompt(repromptText)
             .getResponse();
     }
 };
@@ -75,6 +79,7 @@ const TestIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .reprompt(repromptText)
             .getResponse();
     }
 };
@@ -89,6 +94,7 @@ const ContagionIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .reprompt(repromptText)
             .getResponse();
     }
 };
@@ -103,6 +109,7 @@ const WFHAdvicesIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .reprompt(repromptText)
             .getResponse();
     }
 };
@@ -117,6 +124,7 @@ const QuarantineIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .reprompt(repromptText)
             .getResponse();
     }
 };
@@ -131,6 +139,7 @@ const KidsAtHomeIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .reprompt(repromptText)
             .getResponse();
     }
 };
@@ -145,6 +154,7 @@ const IncubationIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .reprompt(repromptText)
             .getResponse();
     }
 };
@@ -159,6 +169,7 @@ const HealingIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .reprompt(repromptText)
             .getResponse();
     }
 };
@@ -173,6 +184,7 @@ const CurrentStatusIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .reprompt(repromptText)
             .getResponse();
     }
 };
@@ -187,6 +199,7 @@ const FaceMaskIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .reprompt(repromptText)
             .getResponse();
     }
 };
@@ -201,6 +214,7 @@ const SupermarketIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .reprompt(repromptText)
             .getResponse();
     }
 };
@@ -214,6 +228,7 @@ const IbuprofenoIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .reprompt(repromptText)
             .getResponse();
     }
 };
@@ -227,6 +242,7 @@ const ScareIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .reprompt(repromptText)
             .getResponse();
     }
 };
@@ -240,6 +256,7 @@ const AnimalsIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .reprompt(repromptText)
             .getResponse();
     }
 };
@@ -253,6 +270,7 @@ const AlarmStateIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .reprompt(repromptText)
             .getResponse();
     }
 };
@@ -279,6 +297,7 @@ const GoOutIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .reprompt(repromptText)
             .getResponse();
     }
 };
@@ -292,6 +311,7 @@ const SelfCareIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .reprompt(repromptText)
             .getResponse();
     }
 };
@@ -305,6 +325,7 @@ const InfoSourcesIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .reprompt(repromptText)
             .getResponse();
     }
 };
@@ -319,6 +340,7 @@ const HypertensionIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .reprompt(repromptText)
             .getResponse();
     }
 };
@@ -333,20 +355,7 @@ const GlovesIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
-            .getResponse();
-    }
-};
-
-const PhoneIntentHandler = {
-    canHandle(handlerInput) {
-        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
-            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'PhoneIntent';
-    },
-    handle(handlerInput) {
-        const speakOutput = handlerInput.t('PHONE_MSG');
-
-        return handlerInput.responseBuilder
-            .speak(speakOutput)
+            .reprompt(repromptText)
             .getResponse();
     }
 };
@@ -361,6 +370,7 @@ const SkillInitiativeIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .reprompt(repromptText)
             .getResponse();
     }
 };
@@ -375,6 +385,7 @@ const SickLeaveIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .reprompt(repromptText)
             .getResponse();
     }
 };
@@ -389,6 +400,7 @@ const VulnerableGroupsIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .reprompt(repromptText)
             .getResponse();
     }
 };
@@ -403,6 +415,7 @@ const PreventionIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .reprompt(repromptText)
             .getResponse();
     }
 };
@@ -417,6 +430,7 @@ const CleaningIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .reprompt(repromptText)
             .getResponse();
     }
 };
@@ -431,6 +445,7 @@ const WhoAreYouIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .reprompt(repromptText)
             .getResponse();
     }
 };
@@ -445,6 +460,7 @@ const BloodDonationIntentHandler = {
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
+            .reprompt(repromptText)
             .getResponse();
     }
 };
@@ -527,7 +543,7 @@ const IntentReflectorHandler = {
 
         return handlerInput.responseBuilder
             .speak(speakOutput)
-            //.reprompt('add a reprompt if you want to keep the session open for the user to respond')
+            //.repromptText('add a repromptText if you want to keep the session open for the user to respond')
             .getResponse();
     }
 };
@@ -593,7 +609,6 @@ exports.handler = Alexa.SkillBuilders.custom()
         InfoSourcesIntentHandler,
         HypertensionIntentHandler,
         GlovesIntentHandler,
-        PhoneIntentHandler,
         SkillInitiativeIntentHandler,
         SickLeaveIntentHandler,
         VulnerableGroupsIntentHandler,
