@@ -6,12 +6,6 @@
                 {
                     "name": "AMAZON.CancelIntent",
                     "samples": [
-                        "adios",
-                        "adiós",
-                        "atwo",
-                        "bye",
-                        "chao",
-                        "ciao",
                         "hasta luego",
                         "nos vemos"
                     ]
@@ -35,16 +29,7 @@
                 },
                 {
                     "name": "AMAZON.StopIntent",
-                    "samples": [
-                        "adios",
-                        "adiós",
-                        "atwo",
-                        "bye",
-                        "chao",
-                        "ciao",
-                        "hasta luego",
-                        "nos vemos"
-                    ]
+                    "samples": []
                 },
                 {
                     "name": "WhatIsCoronavirusIntent",
@@ -228,7 +213,6 @@
                         "hasta cuántos días es contagioso",
                         "mi abuelo vive con nosotros como prevengo que no se contagie",
                         "mi perro puede estar contagiado",
-                        "número de contagios",
                         "puedo ir a ver a un familiar enfermo",
                         "puedo visitar a un familiar con patologías previas",
                         "que hacer si tengo un familiar contagiado",
@@ -348,7 +332,6 @@
                         "hay algún medicamento recomendado",
                         "hay vacuna",
                         "por qué no debo tomar antibióticos",
-                        "puedo tomar ibuprofeno",
                         "puedo tomar medicamentos",
                         "puedo tomar paracetamol",
                         "qué medicamento debo tomar para el virus",
@@ -486,12 +469,9 @@
                         "he leído que no debería tomar ibuprofeno",
                         "noticia sobre peligrosidad del ibuprofeno",
                         "puedo tomar ibuprofeno",
-                        "puedo tomar paracetamol",
                         "tengo que tomar ibuprofeno es seguro",
                         "es verdad que el ibuprofeno es peligroso",
                         "paracetamol o ibuprofeno con fiebre",
-                        "puedo tomar antibióticos",
-                        "puedo tomar ibuprofeno",
                         "tengo que dejar de tomar ibuprofeno"
                     ]
                 },
@@ -529,7 +509,6 @@
                 {
                     "name": "AlarmStateIntent",
                     "samples": [
-                        "hasta cuándo tengo que estar en casa",
                         "hasta cuándo va a durar la cuarentena",
                         "medidas en la comunidad de madrid",
                         "puedo salir a la calle durante el estado de alerta por coronavirus",
@@ -540,7 +519,6 @@
                         "qué medidas ha tomado mi comunidad autónoma",
                         "tienes info sobre las cosas que se pueden hacer y las que no durante la cuarentena",
                         "y puedo salir a dar un paseo",
-                        "está prohibido salir del país",
                         "habrá intervención militar",
                         "qué es el estado de alarma",
                         "qué es el estado de alerta",
@@ -581,21 +559,16 @@
                         "puedo salir a la calle a hacer deporte",
                         "puedo salir de casa",
                         "puedo salir de mi casa",
-                        "que recomendaciones hay que seguir para el confinamiento",
                         "salir de casa",
                         "tengo que quedarme en casa",
                         "y puedo salir a la calle a correr",
-                        "debería evitar columpios y toboganes",
-                        "los niños pueden salir a la calle",
                         "no puedo coger el coche",
                         "no puedo quedar en la calle",
                         "puedo ir a comprar el pan",
                         "puedo ir a la farmacia",
-                        "puedo ir al parque con mi hija",
                         "puedo sacar al perro",
                         "puedo salir a la calle",
-                        "puedo salir de casa",
-                        "puedo salir en bici con los niños"
+                        "puedo salir de casa"
                     ]
                 },
                 {
@@ -617,11 +590,8 @@
                         "que distancia de seguridad debo mantener con la gente",
                         "que medidas de precaucion debo seguir",
                         "que medidas debo tomar",
-                        "que necesito para evitar contagiarme",
                         "qué puedo hacer para ayudar",
-                        "debo guardar distancia de seguridad con otras personas",
                         "hay que tomar precauciones de algún tipo",
-                        "puedo tocar a otras personas",
                         "qué medidas personales debo tomar",
                         "qué puedo hacer para protegerme",
                         "sirve de algo lavarse las manos"
@@ -728,7 +698,6 @@
                         "está prohibido salir a correr",
                         "puedo bajar la basura",
                         "puedo hacer deporte al aire libre",
-                        "puedo ir a hacer la compra",
                         "puedo salir a dar un paseo",
                         "puedo salir a pasear el perro",
                         "puedo tocar a otras personas"
@@ -754,8 +723,6 @@
                         "quien habla del otro lado",
                         "quien te ha hecho ",
                         "con quién hablo",
-                        "cuál es tu nombre",
-                        "cómo te llamas",
                         "quién eres",
                         "quién está detrás de esto"
                     ]
