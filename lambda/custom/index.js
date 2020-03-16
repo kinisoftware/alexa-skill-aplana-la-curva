@@ -79,6 +79,376 @@ const TestIntentHandler = {
     }
 };
 
+const ContagionIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'ContagionIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = handlerInput.t('CONTAGION_MSG');
+
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            .getResponse();
+    }
+};
+
+const WFHAdvicesIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'WFHAdvicesIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = handlerInput.t('WFH_ADVICES_MSG');
+
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            .getResponse();
+    }
+};
+
+const QuarantineIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'QuarantineIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = handlerInput.t('QUARANTINE_MSG');
+
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            .getResponse();
+    }
+};
+
+const KidsAtHomeIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'KidsAtHomeIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = handlerInput.t('KIDS_AT_HOME_MSG');
+
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            .getResponse();
+    }
+};
+
+const IncubationIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'IncubationIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = handlerInput.t('INCUBATION_MSG');
+
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            .getResponse();
+    }
+};
+
+const HealingIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'HealingIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = handlerInput.t('HEALING_MSG');
+
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            .getResponse();
+    }
+};
+
+const CurrentStatusIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'CurrentStatusIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = handlerInput.t('CURRENT_STATUS_MSG');
+
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            .getResponse();
+    }
+};
+
+const FaceMaskIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'FaceMaskIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = handlerInput.t('FACE_MASK_MSG');
+
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            .getResponse();
+    }
+};
+
+const SupermarketIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'SupermarketIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = handlerInput.t('SUPERMARKET_MSG');
+
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            .getResponse();
+    }
+};
+const IbuprofenoIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'IbuprofenoIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = handlerInput.t('IBUPROFENO_MSG');
+
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            .getResponse();
+    }
+};
+const ScareIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'ScareIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = handlerInput.t('SCARE_MSG');
+
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            .getResponse();
+    }
+};
+const AnimalsIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'AnimalsIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = handlerInput.t('ANIMALS_MSG');
+
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            .getResponse();
+    }
+};
+const AlarmStateIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'AlarmStateIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = handlerInput.t('ALARM_STATE_MSG');
+
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            .getResponse();
+    }
+};
+const ThanksIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'ThanksIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = handlerInput.t('THANKS_MSG');
+
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            .getResponse();
+    }
+};
+const GoOutIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'GoOutIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = handlerInput.t('GO_OUT_MSG');
+
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            .getResponse();
+    }
+};
+const SelfCareIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'SelfCareIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = handlerInput.t('SELF_CARE_MSG');
+
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            .getResponse();
+    }
+};
+const InfoSourcesIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'InfoSourcesIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = handlerInput.t('INFO_SOURCES_MSG');
+
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            .getResponse();
+    }
+};
+
+const HypertensionIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'HypertensionIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = handlerInput.t('HYPERTENSION_MSG');
+
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            .getResponse();
+    }
+};
+
+const GlovesIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'GlovesIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = handlerInput.t('GLOVES_MSG');
+
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            .getResponse();
+    }
+};
+
+const PhoneIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'PhoneIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = handlerInput.t('PHONE_MSG');
+
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            .getResponse();
+    }
+};
+
+const SkillInitiativeIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'SkillInitiativeIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = handlerInput.t('SKILL_INITIATIVE_MSG');
+
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            .getResponse();
+    }
+};
+
+const SickLeaveIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'SickLeaveIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = handlerInput.t('SICK_LEAVE_MSG');
+
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            .getResponse();
+    }
+};
+
+const VulnerableGroupsIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'VulnerableGroupsIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = handlerInput.t('VULNERABLE_GROUPS_MSG');
+
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            .getResponse();
+    }
+};
+
+const PreventionIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'PreventionIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = handlerInput.t('PREVENTION_MSG');
+
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            .getResponse();
+    }
+};
+
+const CleaningIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'CleaningIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = handlerInput.t('CLEANING_MSG');
+
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            .getResponse();
+    }
+};
+
+const WhoAreYouIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'WhoAreYouIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = handlerInput.t('WHO_ARE_YOU_MSG');
+
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            .getResponse();
+    }
+};
+
+const BloodDonationIntentHandler = {
+    canHandle(handlerInput) {
+        return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
+            && Alexa.getIntentName(handlerInput.requestEnvelope) === 'BloodDonationIntent';
+    },
+    handle(handlerInput) {
+        const speakOutput = handlerInput.t('BLOOD_DONATION_MSG');
+
+        return handlerInput.responseBuilder
+            .speak(speakOutput)
+            .getResponse();
+    }
+};
+
 const HelpIntentHandler = {
     canHandle(handlerInput) {
         return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest'
@@ -204,6 +574,33 @@ exports.handler = Alexa.SkillBuilders.custom()
         SymptomsIntentHandler,
         TravelingIntentHandler,
         TestIntentHandler,
+        ContagionIntentHandler,
+        WFHAdvicesIntentHandler,
+        QuarantineIntentHandler,
+        KidsAtHomeIntentHandler,
+        IncubationIntentHandler,
+        HealingIntentHandler,
+        CurrentStatusIntentHandler,
+        FaceMaskIntentHandler,
+        SupermarketIntentHandler,
+        IbuprofenoIntentHandler,
+        ScareIntentHandler,
+        AnimalsIntentHandler,
+        AlarmStateIntentHandler,
+        ThanksIntentHandler,
+        GoOutIntentHandler,
+        SelfCareIntentHandler,
+        InfoSourcesIntentHandler,
+        HypertensionIntentHandler,
+        GlovesIntentHandler,
+        PhoneIntentHandler,
+        SkillInitiativeIntentHandler,
+        SickLeaveIntentHandler,
+        VulnerableGroupsIntentHandler,
+        PreventionIntentHandler,
+        CleaningIntentHandler,
+        WhoAreYouIntentHandler,
+        BloodDonationIntentHandler,
         HelpIntentHandler,
         CancelAndStopIntentHandler,
         FallbackIntentHandler,
